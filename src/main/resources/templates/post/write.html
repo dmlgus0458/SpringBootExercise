@@ -17,7 +17,6 @@
                     <input type="hidden" id="id" name="id" th:if="${post != null}" th:value="${post.id}" />
 
                     <!--/* 서버로 전달할 공지글 여부 */-->
-                    <input type="hidden" id="noticeYn" name="noticeYn" />
                     <table class="tb tb_row">
                         <colgroup>
                             <col style="width:15%;" /><col style="width:35%;" /><col style="width:15%;" /><col style="width:35%;" />
@@ -65,7 +64,7 @@
             }
 
 
-            // 등록일 초기화
+            // postColumns 초기화
             function initCreatedDate() {
                 document.getElementById('createdDate').value = dayjs().format('YYYY-MM-DD');
             }

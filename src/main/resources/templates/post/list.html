@@ -48,7 +48,7 @@
                             <td th:text="${row.noticeYn == false ? (status.size - status.index) : '공지'}"></td>
                             <td class="tl"><a th:href="@{/post/view.do( id=${row.id} )}" th:text="${row.title}"></a></td>
                             <td th:text="${row.writer}"></td>
-                            <td th:text="${#temporals.format( row.createdDate, 'yyyy-MM-dd HH:mm' )}"></td>
+                            <td th:text="${#temporals.format(row.createdDate, 'yyyy-MM-dd HH:mm')}"></td>
                             <td th:text="${row.viewCnt}"></td>
                         </tr>
 
